@@ -1,0 +1,17 @@
+{
+  "license": "LGPL-3.0-or-later",
+  "scripts": {
+    "test": "web-ext run --browser-console --devtools",
+    "lint": "web-ext lint",
+    "build": "web-ext sign --channel=unlisted",
+    "publish": "web-ext sign --channel=listed"
+  },
+  "devDependencies": {
+    "@types/firefox-webext-browser": "^120.0.4",
+    "dotenv": "^16.4.5",
+    "web-ext": "^8.2.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "2.3.2"
+  }
+}

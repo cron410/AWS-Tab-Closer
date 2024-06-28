@@ -1,0 +1,16 @@
+{
+  "slug": "aws-vpn-tab-closer",
+  "summary": {
+    "en-US": "Automatically closes authentication tabs left open by AWS VPN"
+  },
+  "description": {
+    "en-US": "An extension to detect and close the authentication tab left open by AWS VPN. Based on the <a href=\"https://chromewebstore.google.com/detail/aws-vpn-tab-closer/eeohkjpjmohadfbgaghdofdphnjhidfg\">Chrome extension</a> by the same name.\n\nWhen the AWS VPN clients resubmits your stored credentials it leaves a very annoying tab open in your browser, if you are AFK for a while you can come back to a window full of tabs.\n\nThis extension will only activate for tabs using the URL http://127.0.0.1:35001 and it will close it as soon as the confirmation message is displayed. This will not affect the sign in process."
+  },
+  "categories": [
+    "tabs"
+  ],
+  "version": {
+    "license": "LGPL-3.0-or-later",
+    "approval_notes": "The content script runs on all 127.0.0.1 URLs because I can't filter to a specific port, but it's a no-op for anything other than the AWS VPN port"
+  }
+}
